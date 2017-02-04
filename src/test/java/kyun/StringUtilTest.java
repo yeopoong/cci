@@ -20,4 +20,11 @@ public class StringUtilTest {
         result = StringUtil.isUniqueChar(str);
         Assert.assertEquals(false, result);
 	}
+
+	@Test
+	public void reverseTest() {
+	    String str = "abcd";
+        String reverse = StringUtil.reverse(str);
+        Assert.assertEquals("dcba", reverse);
+	}
 }
